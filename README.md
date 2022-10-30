@@ -6,6 +6,8 @@
 # Themes
 bootstrap5/jqueryUI
 
+# CDN Links
+https://cdn.jsdelivr.net/gh/sudhanshuism/supergrid@1.0.0/supergrid.js
 
 #dataType: local/json/xml
 
