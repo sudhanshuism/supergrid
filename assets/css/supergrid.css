@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.myPage{
+    padding: 20px;
+}
+.supergrid-container{
+    border: 1px solid black;
+    border-radius: 10px;
+    max-width: 100%;
+    overflow-x: scroll;
+}
+.supergrid-container .supergrid-scroller{
+    position: sticky;
+    left:0;
+    top:0px;
+    z-index: 2;
+    width: 0;
+    height: 0;
+    transition-duration: 2s;
+}
+
+.supergrid-container .supergrid-scroller .btn-check:focus+.btn, .btn:focus{
+    box-shadow: 0 0 0 0rem;
+}
+.supergrid-container .supergrid-scroller .btn-group .btn, 
+.supergrid-container .supergrid-scroller .btn-group-vertical .btn{
+    background-color: rgba(65, 65, 65, 0.8) !important;
+    min-width: 20px !important;
+    padding: 3px;
+}
+.supergrid-container .supergrid-scroller .btn-group .btn:hover, 
+.supergrid-container .supergrid-scroller .btn-group-vertical .btn:hover{
+    background-color: rgb(28, 27, 27) !important;
+}
+.supergrid-container .supergrid-scroller .btn-group .btn .fa-solid, 
+.supergrid-container .supergrid-scroller .btn-group-vertical .btn .fa-solid{
+    color: white;
+}
+.supergrid-container{
+    position: relative;
+}
+.supergrid-container::-webkit-scrollbar{
+    width: 0px;
+    height: 5px;
+    scroll-behavior: smooth;
+}
+.supergrid-container::-webkit-scrollbar-thumb{
+    background-color: grey;
+    border-radius: 10px;
+}
+.supergrid-container::-webkit-scrollbar-button{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.supergrid-sticky-header-container{
+    max-height: 80vh;
+}
+.supergrid-container .supergrid .supergrid-header{
+    background-color: #87CEEB;
+}
+.supergrid-container .supergrid .supergrid-header .resizable{
+    resize: horizontal;
+    overflow: auto;
+}
+.supergrid-container .supergrid .supergrid-header .resizable::-webkit-resizer{
+    content:"x"
+}
+.supergrid-container .supergrid .input[type="checkbox"]{
+    vertical-align: middle;
+}
+.supergrid-container .supergrid .sticky-header{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.supergrid-container .supergrid .supergrid-sticky-columns{
+    position: sticky;
+    background-color: azure ;
+    border:0;
+    border-spacing: 0;
+}
+.supergrid-container .supergrid .supergrid-sticky-body-columns{
+    background-color: gainsboro;
+    border-spacing: 0;
+}
+
+.supergrid-container .supergrid .supergrid-header tr th,
+.supergrid-container .supergrid .supergrid-header tr th div{
+    font-size: 14px;
+    text-align: center;
+    vertical-align: middle;
+}
+.supergrid-container .supergrid .supergrid-body tr td,
+.supergrid-container .supergrid .supergrid-body tr td div{
+    font-size: 14px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.supergrid-pager{
+    background-color: #87CEEB;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 5px 0;
+    width: 100%;
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    
+}
+.supergrid-pager .pager-controls,
+.supergrid-pager .pager-left,
+.supergrid-pager .pager-right{
+    position: relative;
+}
+.supergrid-pager .pager-controls{
+    text-align: center;
+}
+.supergrid-pager .pager-controls .controls-counter{
+    margin: 0 5px;
+}
+.supergrid-pager .pager-controls .pager-counter{
+    max-width: 20px;
+    text-align: center;
+}
+.supergrid-pager .pager-left{
+    text-align: left;
+}
+.supergrid-pager .pager-right{
+    text-align: right;
+}
+.supergrid-pager .pager-controls .btn-group .btn{
+    padding: 2px;
+    margin: 0 2px;
+}
+.supergrid-pager .pager-controls .btn-group .btn:hover{
+    box-shadow: 0 0 5px 5px rgb(255, 255, 255) inset;
+}
