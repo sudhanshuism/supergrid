@@ -8,7 +8,7 @@
             data:"",
             stickyHeader: true,
             stickyCols: 0,
-            scroller: true,
+            scroller: false,
             scrollSpeed: 100,
             pager: true,
             rowsPerPage: 20,
@@ -20,6 +20,7 @@
                 label:"",
                 colDataType:"plainText",
                 formInputType:"text",
+                width: "auto",
                 hidden: false,
                 formatter: function(){}
                 }  
