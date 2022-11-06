@@ -14,26 +14,38 @@ https://cdn.jsdelivr.net/gh/sudhanshuism/supergrid@main/assets/css/supergrid.css
 https://cdn.jsdelivr.net/gh/sudhanshuism/supergrid@main/supergrid.js
 
 # Parameters
--dataType: local/json/xml
+- **theme**: bootstrap5/jqueryUI
 
--data: variable associated with data
+- **dataType**: local/json/xml
 
--colNames: removed**
+- **data**: variable associated with data
 
-#stickyHeader: to fix thead to the top : true/false
+- **colNames**: removed**
 
-#stickyCols: to make columns sticky : number of columns from left
+- **stickyHeader**: to fix thead to the top : true/false
 
-#scroller: display custom scroller : true
+- **stickyCols**: to make columns sticky : number of columns from left
 
-#scrollSpeed:speed of horizontal scroll through scroller button : 200 ,
+- **scroller**: display custom scroller : true
+
+- **scrollSpeed**:speed of horizontal scroll through scroller button : 200 ,
+
+- **pager**: true,
+
+- **rowsPerPage**: 20,
+
+- **rowNumbering**: true,
+
+- **multiSelect**: false,
+
+- **colModel**: Properties of a particular column
+
+  - _name_: key name of the data array/json
+  - _colDataType_: plainText/number/date/form
+  - _formInputType_: text/radio/checkbox/number/password/select
+  - _width_: sets the min-width for the col
+  - _selectOptions_: array of object with option names and value
+  - _resizable_ : width of column can be resized
 
 
-#colModel: Properties of a particular column : type: Object
-###name: key name of the data array/json
-###colDataType: plainText/number/date/form
-###formInputType: text/radio/checkbox/number/password/select
-###width: sets the min-width for the col
-###selectOptions: array of object with option names and value
-###resizable : width of column can be resized
 
