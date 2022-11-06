@@ -7,13 +7,18 @@
 bootstrap5/jqueryUI
 
 # CDN Links
-https://cdn.jsdelivr.net/gh/sudhanshuism/supergrid@1.0.0/supergrid.js
+## CSS
+https://cdn.jsdelivr.net/gh/sudhanshuism/supergrid@main/assets/css/supergrid.css
 
-#dataType: local/json/xml
+## JS
+https://cdn.jsdelivr.net/gh/sudhanshuism/supergrid@main/supergrid.js
 
-#data: variable associated with data
+# Parameters
+-dataType: local/json/xml
 
-#colNames: removed**
+-data: variable associated with data
+
+-colNames: removed**
 
 #stickyHeader: to fix thead to the top : true/false
 
