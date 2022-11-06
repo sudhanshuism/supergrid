@@ -63,8 +63,7 @@
     margin-bottom: 10px;
 }
 .supergrid-sticky-header-container{
-    min-height: 80vh;
-    height: 80vh;
+    height: 450px;
 }
 .supergrid-container .supergrid .supergrid-header{
     background-color: #6495ED;
