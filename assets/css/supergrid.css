@@ -6,10 +6,14 @@
     padding: 20px;
 }
 .supergrid-container{
-    border: 1px solid black;
-    border-radius: 10px;
+    border: 1px solid rgba(202, 207, 210,1);
+    border-radius: 0px;
     max-width: 100%;
     overflow-x: scroll;
+    
+}
+.supergrid{
+    height: 100%;
 }
 .supergrid-container .supergrid-scroller{
     position: sticky;
@@ -28,7 +32,11 @@
 .supergrid-container .supergrid-scroller .btn-group-vertical .btn{
     background-color: rgba(65, 65, 65, 0.8) !important;
     min-width: 20px !important;
-    padding: 3px;
+    padding: 1px 3px;
+}
+.supergrid-container .supergrid-scroller .btn-group .btn, 
+.supergrid-container .supergrid-scroller .btn-group-vertical .btn .fa-solid{
+    font-size: 12px;
 }
 .supergrid-container .supergrid-scroller .btn-group .btn:hover, 
 .supergrid-container .supergrid-scroller .btn-group-vertical .btn:hover{
@@ -55,10 +63,13 @@
     margin-bottom: 10px;
 }
 .supergrid-sticky-header-container{
-    max-height: 80vh;
+    min-height: 80vh;
+    height: 80vh;
 }
 .supergrid-container .supergrid .supergrid-header{
-    background-color: #87CEEB;
+    background-color: #6495ED;
+    border-style: none !important;
+    border-top-width: 0px !important;
 }
 .supergrid-container .supergrid .supergrid-header .resizable{
     resize: horizontal;
@@ -72,7 +83,7 @@
 }
 .supergrid-container .supergrid .sticky-header{
     position: sticky;
-    top: 0;
+    top: -1px;
     z-index: 1;
 }
 .supergrid-container .supergrid .supergrid-sticky-columns{
@@ -88,21 +99,24 @@
 
 .supergrid-container .supergrid .supergrid-header tr th,
 .supergrid-container .supergrid .supergrid-header tr th div{
-    font-size: 14px;
+    font-size: 12px;
     text-align: center;
     vertical-align: middle;
 }
 .supergrid-container .supergrid .supergrid-body tr td,
 .supergrid-container .supergrid .supergrid-body tr td div{
-    font-size: 14px;
+    font-size: 12px;
     text-align: center;
     vertical-align: middle;
 }
+.supergrid-container .supergrid .supergrid-body .selected-row{
+    background-color: #CACFD2;
+}
 
 .supergrid-pager{
-    background-color: #87CEEB;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    background-color: #6495ED;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
     padding: 5px 0;
     width: 100%;
     position: sticky;
