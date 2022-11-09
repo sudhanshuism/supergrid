@@ -48,4 +48,3 @@ https://cdn.jsdelivr.net/gh/sudhanshuism/supergrid@main/supergrid.js
   - _resizable_ : width of column can be resized
 
 
-

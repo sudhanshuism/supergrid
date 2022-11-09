@@ -20,6 +20,7 @@
                 label:"",
                 colDataType:"plainText",
                 formInputType:"text",
+                selectOptions: ["Select"],
                 width: "auto",
                 hidden: false,
                 formatter: function(){}
@@ -312,14 +313,14 @@
                             <div class="btn-group" role="group" aria-label="pager-controls">
                                 <button type="button" id="control-backward-fast" class="btn"><i class="fa-solid fa-backward-fast"></i></button>
                                 <button type="button" id="control-backward" class="btn "><i class="fa-solid fa-backward"></i></button>
-                                <div class="d-inline-block controls-couter"><span>Page <input class="pager-counter" id="page-num" type="text" value="1"/> of <span id="tot-page"></span> </span></div>
+                                <div class="d-inline-block controls-couter unselectable"><span>Page <input class="pager-counter" id="page-num" type="text" value="1"/> of <span id="tot-page"></span> </span></div>
                                 <button type="button" id="control-forward" class="btn " ><i class="fa-solid fa-forward"></i></button>
                                 <button type="button" id="control-forward-fast" class="btn " ><i class="fa-solid fa-forward-fast"></i></button>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-4 pager-right">
-                        <div class="right-container">
+                        <div class="right-container unselectable">
                             View <span id="startRowNum">1</span> - <span id="endRowNum">13</span> of <span id="totalRowNum">13</span>
                         </div>
                         
@@ -393,10 +394,12 @@
                 currPage= currPage -1;
                 //console.log(currPage);
                 $("#page-num").val(currPage);
-
-                let count = -(settings.rowsPerPage);
+                
+                
+                let count = -(settings.rowsPerPage);    
                 startRow += count;
-                lastRow += count;
+                lastRow = startRow + settings.rowsPerPage;
+                             
 
                 if (startRow <= 0) {
                     startRow = 0;
