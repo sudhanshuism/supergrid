@@ -3,6 +3,10 @@
 - Jquery 3.6.1
 - FontAwesome 6.2.0
 
+# Documentation
+
+https://sudhanshuism.github.io/supergrid-docs/
+
 # Themes
 bootstrap5/jqueryUI
 
